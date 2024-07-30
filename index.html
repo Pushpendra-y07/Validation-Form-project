@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Form Validation</h2>
+        <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="formdesign" id="name">
+                Full Name : <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="email">
+                Email ID : <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="phone">
+                Phone Number : <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="pass">
+                Password: <input type="password" name="fpass" required><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="cpass">
+                Confirm Password : <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+            </div>
+
+            <input class="btn" type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
